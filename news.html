@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+  <title>横浜動物病院 ／ お知らせ</title>
+  <script src="jQuery/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+        var pagetop = $('#page_top');
+        pagetop.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+        pagetop.fadeIn();
+        } else {
+        pagetop.fadeOut();
+      }
+      });
+        pagetop.click(function () {
+      $('body, html').animate({
+        scrollTop: 0
+      }, 500);
+        return false;
+      });
+    });
+    $(function() {
+  $('.btn-gNav').on("click", function(){
+
+    $(this).toggleClass('open');
+    $('#gNav').toggleClass('open');
+  });
+
+});
+
+// メニューをクリックされたら、非表示にする
+$(function() {
+  $('.gNav-menu li a').on("click", function(){
+     $('#gNav').removeClass('open');
+  });
+});
+  </script>
+
+</head>
+<body>
+  <header id="header">
+    <div class="header">
+      <div class="nav_area">
+        <div class="logo_box">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="ロゴ"></a>
+          </div>
+        </div>
+        <ul class="h_nav">
+          <li><a href="#">診療案内</a></li>
+          <li><a href="#">院内紹介</a></li>
+          <li><a href="#">クリニック案内</a></li>
+          <li><a href="#">スタッフ紹介</a></li>
+          <li><a href="#">トリミング</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header_sp">
+      <div class="logo_sp">
+        <a href="index.html"><img src="images/logo_sp.png" alt=""></a>
+      </div>
+      <div id="hamburger">
+        <p class="btn-gNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </p>
+        <nav id="gNav">
+          <ul class="gNav-menu">
+            <li><a href="#">診療案内</a></li>
+            <li><a href="#">院内紹介</a></li>
+            <li><a href="#">クリニック紹介</a></li>
+            <li><a href="#">スタッフ紹介</a></li>
+            <li><a href="#">トリミング</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <section class="news_top_image">
+    <h1>お知らせ</h1>
+    <span class="small s_home"><a href="index.html">ホーム</a></span>　　／　
+    <span class="small">お知らせ</span>
+  </section>
+  <section class="news_contents">
+    <div class="news_wrapper">
+        <div class="news_small_wrapper">
+        <a href="news.html">
+          <div class="box2">
+            <img src="images/dog.png" width="80px" height="80px" alt="" class="n_img">
+            <div>
+              <div class="n_box">
+                <div>
+                  <span>お知らせ</span>
+                </div>
+                <p>
+                  <time datetime="2021-12-1">2021.12.1</time>
+                </p>
+              </div>
+              <h3 class="n_text">
+                年始休暇のお知らせ
+              </h3>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="news_small_wrapper">
+        <a href="news.html">
+          <div class="box2">
+            <img src="images/dog.png" width="80px" height="80px" alt="" class="n_img">
+            <div>
+              <div class="n_box">
+                <div>
+                  <span>お知らせ</span>
+                </div>
+                <p>
+                  <time datetime="2021-7-2">2021.7.2</time>
+                </p>
+              </div>
+              <h3 class="n_text">
+                  7月祝日・8月夏季休暇について
+              </h3>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="news_small_wrapper">
+        <a href="news.html">
+          <div class="box2">
+            <img src="images/dog.png" width="80px" height="80px" alt="" class="n_img">
+            <div>
+              <div class="n_box">
+                <div>
+                  <span>お知らせ</span>
+                </div>
+                <p>
+                  <time datetime="2021-4-21">2021.4.21</time>
+                </p>
+              </div>
+              <h3 class="n_text">
+                横浜動物病院開業のお知らせ
+              </h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <aside class="aside_wrapper">
+      <div class="aside_inner">
+        <div class="aside_text aside_top">
+          <span>カテゴリー</span>
+          <p><a href="news.html">お知らせ</a></p>
+        </div>
+        <div class="aside_text">
+          <span>月別アーカイブ</span>
+          <ul>
+            <li><a href="news.html">2021年12月（1）</a></li>
+            <li><a href="news.html">2021年7月（1）</a></li>
+            <li><a href="news.html">2021年4月（1）</a></li>
+          </ul>
+        </div>
+        <div class="aside_text">
+          <span>最近の記事</span>
+          <ul>
+            <li><a href="news.html">年始休暇のお知らせ</a></li>
+            <li><a href="news.html">7月祝日・8月夏季休暇について</a></li>
+            <li><a href="news.html">横浜動物病院開業のお知らせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </section>
+    <section class="guidance">
+      <div class="guidance_flex">
+        <div class="guidance_contents">
+          <div class="contact">
+            <p>受診前に必ずお電話にてご予約をお取りください。</p>
+            <span class="big"><a href="tel:"><img src="images/tel.png" alt="電話">012-345-6789</a></span>
+            <span class="small">（受付時間　08:30 〜 18:30）</span>
+          </div>
+          <div class="address">
+            <div class="address_img">
+              <img src="images/map.png" alt="マップピン">
+            </div>
+            <div class="address_text">
+              <p>〒220-0011<br>
+                神奈川県横浜市西区高島 220-0005 2丁目 16</p>
+            </div>
+          </div>
+          <div class="train">
+            <img src="images/train.png" alt="電車">横浜駅 より 徒歩１分
+          </div>
+        </div>
+        <div class="guidance_img">
+          <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.5479016496556!2d139.6198733151954!3d35.465985449354044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0df6cfd2f1%3A0xbbbca6f36b5235f5!2z5qiq5rWc6aeF!5e0!3m2!1sja!2sjp!4v1642031768493!5m2!1sja!2sjp" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        </div>
+      </div>
+    </section>
+    <footer class="big-wrapper">
+      <div id="page_top"><a href="#"></a></div>
+        <div class="footer_nav">
+          <ul>
+            <li><a href="">はじめての方</a></li>
+            <li><a href="">予防接種</a></li>
+            <li><a href="">検診</a></li>
+            <li><a href="">手術</a></li>
+            <li><a href="">入院</a></li>
+            <li><a href="">トリミング</a></li>
+          </ul>
+          <ul>
+            <li><a href="">クリニックのご案内</a></li>
+            <li><a href="">スタッフ一覧</a></li>
+            <li><a href="">院内紹介</a></li>
+            <li><a href="">スタッフブログ</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+          </ul>
+          <ul>
+            <li><a href="">採用情報</a></li>
+            <li><a href="form.html">お問い合わせ</a></li>
+          </ul>
+          <ul>
+            <li><a href="">サイトマップ</a></li>
+            <li><a href="">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+        <div class="copy">
+          &copy;TSURUOKA. 2021
+        </div>
+    </footer>
+</body>
